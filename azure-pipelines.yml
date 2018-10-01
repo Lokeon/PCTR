@@ -47,4 +47,4 @@ jobs:
       jdkArchitectureOption: 'x64'
       publishJUnitResults: true
       testResultsFiles: '**/TEST-*.xml'
-goals: 'package'
+      goals: 'package'
