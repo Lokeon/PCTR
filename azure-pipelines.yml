@@ -9,10 +9,10 @@ pool:
 steps:
 - task: Maven@3
   inputs:
-    mavenPomFile: 'practica1/pom.xml'
+    mavenPomFile: '$(system.defaultWorkingDirectory)/practica1/pom.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.10'
+    jdkVersionOption: '1.8'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'
