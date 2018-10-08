@@ -2,14 +2,36 @@
     "configurations": [
         {
             "type": "java",
-            "name": "CodeLens (Launch) - App",
+            "name": "CodeLens (Launch) - Aleatorios",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
             "stopOnEntry": false,
-            "mainClass": "pr1.App",
+            "mainClass": "p1.Aleatorios",
             "args": "",
-            "projectName": "practica1"
+            "projectName": "p1"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Circulo",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "p1.Circulo",
+            "args": "",
+            "projectName": "p1"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "stopOnEntry": false,
+            "mainClass": "p1.App",
+            "args": "",
+            "projectName": "p1"
         }
     ]
 }

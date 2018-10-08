@@ -1,4 +1,4 @@
-package pr1;
+package p2;
 
 import static org.junit.Assert.assertTrue;
 
