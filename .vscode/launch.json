@@ -2,6 +2,39 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - NewtownRaphson",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "stopOnEntry": false,
+            "mainClass": "p1.NewtownRaphson",
+            "args": "",
+            "projectName": "p1"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - desCesar",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "stopOnEntry": false,
+            "mainClass": "p1.desCesar",
+            "args": "",
+            "projectName": "p1"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Cesar",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "stopOnEntry": false,
+            "mainClass": "p1.Cesar",
+            "args": "",
+            "projectName": "p1"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Aleatorios",
             "request": "launch",
             "cwd": "${workspaceFolder}",
