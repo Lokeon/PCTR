@@ -1,5 +1,17 @@
 {
+    
     "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - intDefinidaMonteCarlo",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "stopOnEntry": false,
+            "mainClass": "p1.intDefinidaMonteCarlo",
+            "args": "",
+            "projectName": "p1"
+        },
         {
             "type": "java",
             "name": "CodeLens (Launch) - NewtownRaphson",

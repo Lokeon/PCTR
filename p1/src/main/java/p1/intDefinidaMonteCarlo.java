@@ -1,0 +1,66 @@
+package p1;
+
+import java.util.* ; 
+
+public class intDefinidaMonteCarlo
+{
+    //[a,b] = [0,1]
+    public static double f1(int n, double a , double b)
+    {
+        Random r = new Random() ;
+
+        double sum = 0.0 ;
+        
+        for(double i = 0.0 ; i < n ; ++i)
+        {
+            sum = sum + Math.sin(a + (b - a) * r.nextDouble());
+        }
+
+        return ((b - a ) / n) * sum ;
+    }
+    public static double f2(int n, double a , double b)
+    {
+        Random r = new Random() ;
+
+        double sum = 0.0 ;
+        
+        for(double i = 0.0 ; i < n ; ++i)
+        {
+            sum = sum + (a + (b - a) * r.nextDouble());
+        }
+
+        return ((b - a ) / n) * sum ;
+    }
+
+    public static void main(String[] args)
+    {
+        Scanner s = new Scanner(System.in);
+        int opc ; 
+        do
+        {
+            System.out.println("Elige una opcion: ");
+            System.out.println("1- f(x) = sin(x) en [0, 1] ");
+            System.out.println("2- f(x) = x en [0, 1]");
+            System.out.println("0- Salir");
+            opc = s.nextInt();
+            switch(opc)
+            {
+                case 1:
+                System.out.println("Introduzca nºPuntos: ");
+                int n = s.nextInt();
+                System.out.println("La aproximacion es: "+f1(n,0,1));
+                    break;
+                case 2:
+                System.out.println("Introduzca nºPuntos: ");
+                int z = s.nextInt();
+                System.out.println("La aproximacion es: "+f2(z,0,1));
+                    break;
+                case 0:
+                    return ;
+            }
+        }while(opc < 1 || opc > 2);    
+   
+        s.close();
+    }
+
+} 

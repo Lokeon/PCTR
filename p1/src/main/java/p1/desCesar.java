@@ -17,5 +17,6 @@ class desCesar
             char c = (char)(cad.charAt(i) - n%27);
             System.out.print(c);
         }
+        s.close();
     }
 }
