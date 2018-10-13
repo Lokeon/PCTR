@@ -5,6 +5,13 @@ import java.util.* ;
 public class intDefinidaMonteCarlo
 {
     //[a,b] = [0,1]
+    /**
+     * 
+     * @param n Número de Puntos
+     * @param a 0 -Rango  
+     * @param b 1 -Rango
+     * @return  Devuelve la aproximación
+     */
     public static double f1(int n, double a , double b)
     {
         Random r = new Random() ;
@@ -16,8 +23,17 @@ public class intDefinidaMonteCarlo
             sum = sum + Math.sin(a + (b - a) * r.nextDouble());
         }
 
-        return ((b - a ) / n) * sum ;
+        return ((b - a ) / n) * sum;    
     }
+   
+    /**
+     * 
+     * @param n Número de Puntos
+     * @param a 0 -Rango  
+     * @param b 1 -Rango
+     * @return  Devuelve la aproximación
+     */
+   
     public static double f2(int n, double a , double b)
     {
         Random r = new Random() ;
@@ -35,7 +51,7 @@ public class intDefinidaMonteCarlo
     public static void main(String[] args)
     {
         Scanner s = new Scanner(System.in);
-        int opc ; 
+        int opc;
         do
         {
             System.out.println("Elige una opcion: ");

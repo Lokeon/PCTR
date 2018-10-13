@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 class NewtownRaphson
 {
+    /**
+     * 
+     * @param x Aproximimación Inicial
+     * @param n Número de Iteraciones
+     */
     public static void f1(double x, int n)
     {
         for(int i = 0 ; i < n ; ++i)
@@ -12,6 +17,11 @@ class NewtownRaphson
             System.out.println("Iteracion"+(i+1)+" Resultado:"+x);
         }
     }
+    /**
+     * 
+     * @param x Aproximación Inicial
+     * @param n Número de Iteraciones
+     */
     public static void f2(double x, int n)
     {
         for(int i = 0 ; i < n ; ++i)
