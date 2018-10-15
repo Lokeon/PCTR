@@ -71,10 +71,9 @@ public class intDefinidaMonteCarlo
                 int z = s.nextInt();
                 System.out.println("La aproximacion es: "+f2(z,0,1));
                     break;
-                case 0:
-                    return ;
+                
             }
-        }while(opc < 1 || opc > 2);    
+        }while(opc != 0);    
    
         s.close();
     }

@@ -57,10 +57,9 @@ class NewtownRaphson
                     int y = s.nextInt();
                     f2(z,y);
                     break;
-                case 0:
-                    return ;
+                
             }
-        }while(opc < 1 || opc > 2); 
+        }while(opc != 0); 
     
     
         s.close();
