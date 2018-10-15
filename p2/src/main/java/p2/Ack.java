@@ -2,17 +2,30 @@ package p2;
 
 class Ack
 {
+    /**
+     * 
+     * @param m  //Primer parametro de la función de Ackermann
+     * @param n // Segundo parametro de la función de Ackermann
+     * @return  // devuelve el resultado de la función de Ackermann
+     */
     static int ackerman(int m, int n)
     {
         if(m == 0)
-            return n+1;
+        {
+            return n + 1;
+        }   
         else
+        {
             if(m > 0 && n == 0)
+            {
                 return ackerman(m-1, 1);
+            }   
             else
+            {
                 return ackerman(m-1, ackerman(m, n-1));
+            }   
+        }
     }
-    
     public static void main(String[] args)       
     {
         if(args.length == 2)
