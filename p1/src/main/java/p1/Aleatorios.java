@@ -6,7 +6,7 @@ class Aleatorios
     {
         for(int i=0; i < Integer.parseInt(args[0]); ++i)
         {
-            System.out.println(Math.random());
+            System.out.println(Math.random()*10);
         }
     }
 }
