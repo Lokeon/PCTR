@@ -6,10 +6,10 @@ class Biblioteca
 {
     private List<Paciente> pacientes_ = new ArrayList<Paciente>() ;
     
+   
     /**
-     * 
-     * @param pacientes //ArrayList que servirá para introducir los pacientes
-     */
+    * Método que nos inserta los Pacientes en el ArrayList 
+    */
     public void insertar()
     {
         Scanner s = new Scanner(System.in);
@@ -30,9 +30,7 @@ class Biblioteca
     }
 
     /**
-     * 
-     * @param pacientes // ArrayList que anteriormente contiene los pacientes que nos 
-     *                  // servirá para buscar el paciente y eliminarlo 
+     * Método que nos borra un Paciente del ArrayList según un DNI
      */
     public void borrar()
     {
@@ -51,9 +49,7 @@ class Biblioteca
     }
 
     /**
-     * 
-     * @param pacientes // ArrayList que anteriormente contiene los pacientes que nos 
-     *                  // servirá para buscar el paciente y mostrar sus datos 
+     * Método que nos muestra la información de un Paciente
      */
     public void consultar()
     {
