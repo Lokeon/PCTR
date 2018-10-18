@@ -2,6 +2,9 @@ package p2;
 
 import java.util.*;
 
+/**
+ * @author Kevin López Cala
+ */
 class Biblioteca
 {
     private List<Paciente> pacientes_ = new ArrayList<Paciente>() ;
@@ -66,6 +69,17 @@ class Biblioteca
             }
         }
     }
+
+    /**
+     * Función para el menú 
+     */
+    static void menu()
+    {
+        System.out.println("1- Insertar Paciente");
+        System.out.println("2- Borrar Paciente");
+        System.out.println("3- Consultar Paciente");
+        System.out.println("0- Salir");
+    }
     public static void main(String[] args)
     {
         Scanner s = new Scanner(System.in);
@@ -74,10 +88,7 @@ class Biblioteca
 
         do
         {
-            System.out.println("1- Insertar Paciente");
-            System.out.println("2- Borrar Paciente");
-            System.out.println("3- Consultar Paciente");
-            System.out.println("0- Salir");
+            menu() ;    
             opc = s.nextInt();
             switch(opc)
             {

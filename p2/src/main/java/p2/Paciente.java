@@ -47,7 +47,4 @@ class Paciente
     private String compseguro; 
     private String telefono;
 
-   
-
-    
 }

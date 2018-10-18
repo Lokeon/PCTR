@@ -4,12 +4,15 @@ package p2;
 import java.util.*;
 import java.math.*;
 
+/**
+ * @author Kevin López Cala
+ */
 class Estadistica
 {
     /**
-     * 
-     * @param numeros // Vector-double que incluye los elementos 
-     * @return // retorna la media de los elementos del vector
+     * Método que nos calcula la media  
+     * @param numeros  Vector-double que incluye los elementos 
+     * @return retorna la media de los elementos del vector
      */
     static double media(double numeros[])
     {
@@ -24,9 +27,9 @@ class Estadistica
     }
 
     /**
-     * 
-     * @param numeros // Vector-double que incluye los elementos 
-     * @return // retorna la moda de los elementos del vector 
+     * Método que nos calcula la moda 
+     * @param numeros  Vector-double que incluye los elementos 
+     * @return  retorna la moda de los elementos del vector 
      */
     static double moda(double numeros[])
     {
@@ -55,9 +58,9 @@ class Estadistica
     }
 
     /**
-     * 
-     * @param numeros // Vector-double que incluye los elementos 
-     * @return // retorna la varianza de los elementos del vector 
+     * Método que nos calcula la varianza
+     * @param numeros  Vector-double que incluye los elementos 
+     * @return  retorna la varianza de los elementos del vector 
      */
     static double varianza(double numeros[])
     {
@@ -72,13 +75,26 @@ class Estadistica
     }
 
     /**
-     * 
-     * @param numeros // Vector-double que incluye los elementos 
-     * @return // retorna la desviación típica de los elementos del vector 
+     * Método que nos calcula la desviación típica 
+     * @param numeros  Vector-double que incluye los elementos 
+     * @return  retorna la desviación típica de los elementos del vector 
      */
     static double desvtipica(double numeros[])
     {
         return Math.sqrt(varianza(numeros));
+    }
+
+    /**
+     * Función para mostrar el menú
+     */
+    static void menu()
+    {
+        System.out.println("1- Media");
+        System.out.println("2- Moda");
+        System.out.println("3- Varianza");
+        System.out.println("4- Desviación Típica");
+        System.out.println("0- Salir");
+           
     }
 
     public static void main(String[] args)
@@ -97,13 +113,7 @@ class Estadistica
 
         do
         {
-           System.out.println("1- Media");
-           System.out.println("2- Moda");
-           System.out.println("3- Varianza");
-           System.out.println("4- Desviación Típica");
-           System.out.println("0- Salir");
-           
-           
+            menu();
             opc = s.nextInt();
             switch(opc)
             {

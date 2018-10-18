@@ -1,9 +1,12 @@
 package p2;
 
+/**
+ * @author Kevin López Cala
+ */
 class Ack
 {
     /**
-     * 
+     * Método que calcula la función de Ackermann recursivamente
      * @param m  //Primer parametro de la función de Ackermann
      * @param n // Segundo parametro de la función de Ackermann
      * @return  // devuelve el resultado de la función de Ackermann

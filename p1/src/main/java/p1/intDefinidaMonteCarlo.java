@@ -2,11 +2,14 @@ package p1;
 
 import java.util.* ; 
 
+/**
+ * @author Kevin López Cala
+ */
 public class intDefinidaMonteCarlo
 {
     //[a,b] = [0,1]
     /**
-     * 
+     * Método que nos calcula la aproximación en f(x) = sin(x) en [0, 1]
      * @param n Número de Puntos
      * @param a 0 -Rango  
      * @param b 1 -Rango
@@ -27,7 +30,7 @@ public class intDefinidaMonteCarlo
     }
    
     /**
-     * 
+     * Método que nos calcula la aproximación en f(x) = x en [0, 1]  
      * @param n Número de Puntos
      * @param a 0 -Rango  
      * @param b 1 -Rango

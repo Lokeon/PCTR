@@ -1,5 +1,8 @@
 package p1;
 
+/**
+ * @author Kevin López Cala
+ */
 class Aleatorios
 {
     public static void main(String[] args)

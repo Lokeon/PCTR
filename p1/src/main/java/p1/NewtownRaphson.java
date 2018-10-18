@@ -2,10 +2,13 @@ package p1;
 
 import java.util.Scanner;
 
+/**
+ * @author Kevin López Cala
+ */
 class NewtownRaphson
 {
     /**
-     * 
+     * Método que nos calcula la aproximación en f(x) = cos(x) − x³ en [0, 1]
      * @param x Aproximimación Inicial
      * @param n Número de Iteraciones
      */
@@ -18,7 +21,7 @@ class NewtownRaphson
         }
     }
     /**
-     * 
+     * Método que nos calcula la aproximación en f(x) = x² − 5 en [2, 3]
      * @param x Aproximación Inicial
      * @param n Número de Iteraciones
      */

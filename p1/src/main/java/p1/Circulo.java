@@ -1,5 +1,8 @@
 package p1;
 
+/**
+ * @author Kevin López Cala
+ */
 class Circulo
 {
     public static final double PI = Math.PI ;  
