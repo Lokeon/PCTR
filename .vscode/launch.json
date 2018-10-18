@@ -3,6 +3,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - usaElipse",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "stopOnEntry": false,
+            "mainClass": "p2.usaElipse",
+            "args": "",
+            "projectName": "p2"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Aleatorios",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "pctr.Aleatorios",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Aleatorios",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "stopOnEntry": false,
+            "mainClass": "pctr.Aleatorios",
+            "args": "",
+            "projectName": "pctr"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Aleatorios",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "p1.Aleatorios",
+            "args": ""
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - usaComplejos",
             "request": "launch",
             "cwd": "${workspaceFolder}",
