@@ -1,92 +1,5 @@
 {
-    
     "configurations": [
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - usaElipse",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "integratedTerminal",
-            "stopOnEntry": false,
-            "mainClass": "p2.usaElipse",
-            "args": "",
-            "projectName": "p2"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Aleatorios",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "pctr.Aleatorios",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Aleatorios",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "integratedTerminal",
-            "stopOnEntry": false,
-            "mainClass": "pctr.Aleatorios",
-            "args": "",
-            "projectName": "pctr"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Aleatorios",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "internalConsole",
-            "stopOnEntry": false,
-            "mainClass": "p1.Aleatorios",
-            "args": ""
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - usaComplejos",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "integratedTerminal",
-            "stopOnEntry": false,
-            "mainClass": "p2.usaComplejos",
-            "args": "",
-            "projectName": "p2"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Estadistica",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "integratedTerminal",
-            "stopOnEntry": false,
-            "mainClass": "p2.Estadistica",
-            "args": "",
-            "projectName": "p2"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Ack",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "integratedTerminal",
-            "stopOnEntry": false,
-            "mainClass": "p2.Ack",
-            "args": "",
-            "projectName": "p2"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Biblioteca",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "integratedTerminal",
-            "stopOnEntry": false,
-            "mainClass": "p2.Biblioteca",
-            "args": "",
-            "projectName": "p2"
-        },
         {
             "type": "java",
             "name": "CodeLens (Launch) - intDefinidaMonteCarlo",
@@ -96,9 +9,8 @@
             "stopOnEntry": false,
             "mainClass": "p1.intDefinidaMonteCarlo",
             "args": "",
-            "projectName": "p1"
-        },
-        {
+            "projectName": "practicas"
+        },{
             "type": "java",
             "name": "CodeLens (Launch) - NewtownRaphson",
             "request": "launch",
@@ -107,9 +19,8 @@
             "stopOnEntry": false,
             "mainClass": "p1.NewtownRaphson",
             "args": "",
-            "projectName": "p1"
-        },
-        {
+            "projectName": "practicas"
+        },{
             "type": "java",
             "name": "CodeLens (Launch) - desCesar",
             "request": "launch",
@@ -118,18 +29,7 @@
             "stopOnEntry": false,
             "mainClass": "p1.desCesar",
             "args": "",
-            "projectName": "p1"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Cesar",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "console": "integratedTerminal",
-            "stopOnEntry": false,
-            "mainClass": "p1.Cesar",
-            "args": "",
-            "projectName": "p1"
+            "projectName": "practicas"
         },
         {
             "type": "java",
@@ -140,7 +40,7 @@
             "stopOnEntry": false,
             "mainClass": "p1.Aleatorios",
             "args": "",
-            "projectName": "p1"
+            "projectName": "practicas"
         },
         {
             "type": "java",
@@ -151,18 +51,18 @@
             "stopOnEntry": false,
             "mainClass": "p1.Circulo",
             "args": "",
-            "projectName": "p1"
+            "projectName": "practicas"
         },
         {
             "type": "java",
-            "name": "CodeLens (Launch) - App",
+            "name": "CodeLens (Launch) - Cesar",
             "request": "launch",
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal",
             "stopOnEntry": false,
-            "mainClass": "p1.App",
+            "mainClass": "p1.Cesar",
             "args": "",
-            "projectName": "p1"
+            "projectName": "practicas"
         }
     ]
 }
