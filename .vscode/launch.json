@@ -2,6 +2,57 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - usaElipse",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "stopOnEntry": false,
+            "mainClass": "p2.usaElipse",
+            "args": "",
+            "projectName": "practicas"
+        },{
+            "type": "java",
+            "name": "CodeLens (Launch) - usaComplejos",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "stopOnEntry": false,
+            "mainClass": "p2.usaComplejos",
+            "args": "",
+            "projectName": "practicas"
+        },{
+            "type": "java",
+            "name": "CodeLens (Launch) - Biblioteca",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "stopOnEntry": false,
+            "mainClass": "p2.Biblioteca",
+            "args": "",
+            "projectName": "practicas"
+        },{
+            "type": "java",
+            "name": "CodeLens (Launch) - Ack",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "stopOnEntry": false,
+            "mainClass": "p2.Ack",
+            "args": "",
+            "projectName": "practicas"
+        },{
+            "type": "java",
+            "name": "CodeLens (Launch) - Estadistica",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "stopOnEntry": false,
+            "mainClass": "p2.Estadistica",
+            "args": "",
+            "projectName": "practicas"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - intDefinidaMonteCarlo",
             "request": "launch",
             "cwd": "${workspaceFolder}",
@@ -10,7 +61,8 @@
             "mainClass": "p1.intDefinidaMonteCarlo",
             "args": "",
             "projectName": "practicas"
-        },{
+        },
+        {
             "type": "java",
             "name": "CodeLens (Launch) - NewtownRaphson",
             "request": "launch",
@@ -20,7 +72,8 @@
             "mainClass": "p1.NewtownRaphson",
             "args": "",
             "projectName": "practicas"
-        },{
+        },
+        {
             "type": "java",
             "name": "CodeLens (Launch) - desCesar",
             "request": "launch",
