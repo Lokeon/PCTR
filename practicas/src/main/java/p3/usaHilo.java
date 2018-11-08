@@ -1,7 +1,5 @@
 package p3;
 
-import java.util.concurrent.ExecutionException;
-
 /**
  * @author Kevin López Cala
  */

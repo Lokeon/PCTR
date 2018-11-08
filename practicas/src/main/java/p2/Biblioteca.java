@@ -30,6 +30,8 @@ class Biblioteca
 
         
         pacientes_.add(new Paciente(nombre, dni, direccion, compseguro, telefono));
+
+        s.close();
     }
 
     /**
@@ -49,6 +51,8 @@ class Biblioteca
                 pacientes_.remove(i);
             }
         }
+    
+        s.close();
     }
 
     /**
@@ -68,6 +72,8 @@ class Biblioteca
                 System.out.println(pacientes_.get(i));
             }
         }
+        
+        s.close();
     }
 
     /**

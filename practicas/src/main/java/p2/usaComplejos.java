@@ -23,6 +23,8 @@ import java.util.*;
         double i = s.nextDouble();
 
         return new Complejos(x,i);
+
+        s.close();
     }
 
     /**

@@ -17,8 +17,10 @@ class usaElipse
         double rx = s.nextDouble();
         System.out.println("Introduzca el semieje menor de la elipse");
         double ry = s.nextDouble();
+        s.close();
 
         return new Elipse(rx, ry) ;
+
     }
 
     public static void main(String[] args)
@@ -43,8 +45,7 @@ class usaElipse
         {
             System.out.println("El punto ("+ x +","+ y +") no pertence a la Elipse");
         }
+
+        s.close();
     }
-
-
-
 }
