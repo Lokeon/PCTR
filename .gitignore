@@ -41,5 +41,8 @@ hs_err_pid*
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
 
+# Codigo clase
+PCTR/practicas/src/main/java/p3/Cuenta_Banca.java
+PCTR/practicas/src/main/java/p3/Punto.java
 
 # End of https://www.gitignore.io/api/java,linux
