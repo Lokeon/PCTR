@@ -46,6 +46,6 @@ class usaElipse
             System.out.println("El punto ("+ x +","+ y +") no pertence a la Elipse");
         }
 
-        
+        s.close();
     }
 }
