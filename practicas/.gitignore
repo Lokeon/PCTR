@@ -27,5 +27,5 @@ buildNumber.properties
 .vscode/
 
 # Codigo clase
-PCTR/practicas/src/main/java/p3 Cuenta_Banca.java
-PCTR/practicas/src/main/java/p3 Punto.java
+PCTR/practicas/src/main/java/p3/Cuenta_Banca.java
+PCTR/practicas/src/main/java/p3/Punto.java
