@@ -21,10 +21,9 @@ import java.util.*;
         double x = s.nextDouble();
         System.out.println("Parte Imaginaria: ");
         double i = s.nextDouble();
-
-        return new Complejos(x,i);
-
         s.close();
+        
+        return new Complejos(x,i);
     }
 
     /**
