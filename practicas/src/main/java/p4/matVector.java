@@ -7,15 +7,14 @@ import java.text.* ;
 public class matVector {
     
    private int [][] mat ; 
-   private int [] vec ;
-   private int N , J ;
+   private double [] vec ;
+   private int N, J ;
  
-    
     public matVector(int tam , int tav) {
         this.N = tam  ;
         this.J = tav ; 
         mat = new int[N][N] ;
-        vec = new int[J] ;
+        vec = new double[J] ;
     }
    
     public void intro_mat() {
@@ -27,18 +26,15 @@ public class matVector {
                 mat[i][j]=tecla.nextInt() ;
             }
         }
-        tecla.close();
     }
   
     public void intro_vec() {
-  
-        Scanner tecla = new Scanner(System.in) ;
+        Scanner teclas = new Scanner(System.in) ;
         System.out.print("Introduzca valores para el vector ");
         
-        for(int i = 0 ; i < J ; ++i) {
-            vec[i] = tecla.nextInt() ;
+        for(int i = 0 ; i < vec.length ; ++i) {
+            vec[i] = teclas.nextDouble();
         }
-        tecla.close();
     }
   
     public void intro_matr() {
@@ -69,11 +65,11 @@ public class matVector {
         for(int i = 0 ; i < N ; ++i)
            System.out.println(res[i]);
     }
+    
     public static void main(String[] args) {
     
      int sel , op  ;
      Scanner tecla = new Scanner(System.in) ;
-     Random rm = new Random() ;   
      
      do {
         do {
@@ -88,7 +84,7 @@ public class matVector {
                 System.out.print("Introduzca el tamaño del vector ");
                 int J = tecla.nextInt() ; 
                 
-                matVector Manual =new matVector(N,J) ;
+                matVector Manual = new matVector(N,J) ;
                 Manual.intro_mat();
                 Manual.intro_vec();
                 Date d = new Date() ;
@@ -121,5 +117,6 @@ public class matVector {
             sel = tecla.nextInt() ;
         
       }while(sel == 0) ;
-   }
+       tecla.close();
+    }
 }
