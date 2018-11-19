@@ -1,6 +1,7 @@
 #
 # Standard Maven .gitignore
 #
+src/main/java/p3/Cuenta_Banca.java
 target/
 pom.xml.tag
 pom.xml.releaseBackup
