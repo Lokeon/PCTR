@@ -42,6 +42,6 @@ hs_err_pid*
 .nfs*
 
 .vscode
-.wakatime-projects
+.wakatime-project
 
 # End of https://www.gitignore.io/api/java,linux
