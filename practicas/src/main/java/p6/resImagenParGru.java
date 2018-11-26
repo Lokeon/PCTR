@@ -1,139 +1,70 @@
 
 package p6;
 
+import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+/**
+ * @author Kevin López Cala
+ */
 public class resImagenParGru implements Runnable {
 
-  static int N = 1000;
-  static int[][] imagen;
-  static int[][] res;
-  private int fil;
+  private int hilo, end;
+  public static int[][] mat;
 
-  /**
-   * Constructor de la clase
-   * 
-   * @param N COrresponde al número de filas/hilos ( 4 )
-   */
-
-  public resImagenParGru(int N) {
-
-    this.fil = N;
-
+  public resImagenParGru(int hilo, int end) {
+    this.hilo = hilo;
+    this.end = end;
   }
 
-  /**
-   * Metodo para seleccionar los 20 pixeles de la imagen a resltar
-   * 
-   * @param imagen Matriz imagen
-   */
-
-  public static void iniciar_gris(int[][] imagen) {
-
-    Random rm = new Random();
-
-    for (int i = 0; i < N; ++i)
-      for (int j = 0; j < N; ++j)
-
-        imagen[i][j] = rm.nextInt(20);
-
+  public static void rellenarmat() throws IOException {
+    mat = CargaImagen.cargar("src/main/java/p6/uca_gris.png");
   }
-
-  /**
-   * Metodo run que realizara el resaltado de la imagen
-   */
 
   public void run() {
-
-    int imenos, jmenos;
-
-    int i = fil;
-
-    for (int j = 0; j < N; ++j) {
-
-      imenos = i - 1;
-      jmenos = j - 1;
-
-      if (0 > imenos) {
-        imenos = N - 1;
+    int n = mat.length;
+    for (int i = hilo; i < end; ++i) {
+      for (int j = 0; j < mat[0].length; ++j) {
+        if ((i != 0 && j != 0) && (i != mat.length - 1 && j != mat.length - 1))
+          mat[i][j] = (4 * mat[i][j] - mat[i][(j + 1) % n] - mat[i][(j - 1) % n] - mat[(i - 1) % n][j]) / 8;
       }
-      if (0 > jmenos) {
-        jmenos = N - 1;
-      }
-
-      res[i][j] = (4 * imagen[i][j] - imagen[(i + 1) % N][j] - imagen[i][(j + 1) % N] - imagen[imenos][j]
-          - imagen[i][jmenos]) / 8;
-
-    }
-
-  }
-
-  /**
-   * Método para mostrar imagen
-   * 
-   * @param imagen Matriz imagen
-   */
-
-  public static void mostrar_(int[][] imagen) {
-
-    for (int i = 0; i < N; ++i) {
-      for (int j = 0; j < N; ++j) {
-        System.out.print(" " + imagen[i][j] + " ");
-      }
-      System.out.println("\t");
     }
   }
 
-  /**
-   * Método para mostrar res
-   * 
-   * @param res Matriz resultante
-   */
-  public static void mostrar(int[][] res) {
+  public static void main(String[] args) throws IOException {
 
-    for (int i = 0; i < N; ++i) {
-      for (int j = 0; j < N; ++j) {
-        System.out.print(" " + res[i][j] + " ");
-      }
-      System.out.println("\t");
-    }
-  }
-
-  public static void main(String[] args) throws Exception {
-
-    imagen = new int[N][N];
-    res = new int[N][N];
-
-    int Nt = Runtime.getRuntime().availableProcessors();
-
-    resImagenParFin.iniciar_gris(imagen);
-
-    // resImagenParFin.mostrar_(imagen) ;
-
+    rellenarmat();
+    int nTareas = Runtime.getRuntime().availableProcessors();
+    int tVentana = (int) Math.ceil((mat.length * 1.)/nTareas);
+    int start = 0;
+    int end = 0;
+    boolean tareas = true;
     Date d = new Date();
     DateFormat dd = new SimpleDateFormat("HH:mm:ss");
     long ini = System.nanoTime();
     d.setTime(ini);
 
-    ExecutorService fila = Executors.newFixedThreadPool(Nt);
+    ExecutorService fila = Executors.newFixedThreadPool(nTareas);
 
-    for (int i = 0; i < N; ++i) {
-
-      fila.execute(new resImagenParGru(i));
-
+    for (int i = 0; i < nTareas; ++i) {
+      start = i * tVentana;
+      end = (i + 1) * tVentana;
+      if (tareas) {
+        tareas = (end < mat.length);
+        end = (tareas) ? end : mat.length;
+        fila.submit(new resImagenParGru((int) start, (int) end));
+      }
     }
+
     long fin = System.nanoTime();
+    fila.shutdown();
     d.setTime(fin);
     System.out.println("Terminado : " + dd.format(d) + " tras " + (fin - ini) / 1.0e9 + " seg ");
-    fila.shutdown();
-    while (!fila.isTerminated()) {
-    }
-    // resImagenParFin.mostrar(res) ;
 
+    CargaImagen.guardar(mat, "src/main/java/p6/uca_resaltada.png");
   }
-
 }
