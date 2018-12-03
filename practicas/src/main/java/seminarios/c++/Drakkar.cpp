@@ -47,12 +47,10 @@ void vikingo(bool type, Marmita &m)
     if (type == true)
     {
       m.cocinar();
-      //cout << "vikingo proveedor" << endl;
     }
     else if (type == false)
     {
       m.comer();
-      //cout << "vikingo gloton" << endl;
     }
   }
 }
