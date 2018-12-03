@@ -20,7 +20,7 @@ struct Marmita
     unique_lock<mutex> ul_comer(lock_comer);
     if (anguilas == 0)
       cv_cocinero.notify_one();
-    cv_comer.wait(ul_comer, [this]() { return !(anguilas == 0); });
+    cv_comer.wait(ul_comer, [this]() { return anguilas != 0; });
     anguilas--;
     cout << "Comiendo" << endl;
   }
