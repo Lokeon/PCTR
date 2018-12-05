@@ -3,6 +3,7 @@
 #
 src/main/java/p3/Cuenta_Banca.java
 src/main/java/p7/Cliente_Hilos.java
+src/main/java/p7/fichero.txt
 target/
 pom.xml.tag
 pom.xml.releaseBackup
